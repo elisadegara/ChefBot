@@ -1,5 +1,5 @@
 # ChefBot
-Telegram bot which finds recipes for you with a given set of ingredients
+Telegram bot which finds recipes for you with a given set of ingredients. Group: Elisa Degara, Tommaso Giacomello.
 
 How to use the bot?
 - Install required libraries: pip install gensim numpy pandas scipy python-telegram-bot 
