@@ -14,9 +14,9 @@ Along with the ingredients, the user can also indicate some characteristics of t
 
 Putting all this together, we created a Telegram Bot, with a nice interface: after the user inserts the ingredients and dietary metrics following the instructions displayed in the chat, a set of recipes is shown based on the provided data.
 
-Wecreated two versions of the bot:
- • ChefBot: this version structures the chat in three steps.
+We created two versions of the bot:
+- ChefBot: this version structures the chat in three steps.
    1. Ingredient insertion: the user inserts ingredients (separated by commas), which are then processed by the model and the closest recipes are computed;
    2. Metrics insertion: the metrics are inserted by the user, either by deciding to use the median value (by typing 'n' in the chat) or to employ a custom value. After being standardized withabsolute values applied, the top five closest recipes are chosen in the previous subset using Euclidean distance;
    3. Continuation: if the user decides to ask for other recipes, we go back to point 1, otherwise the session ends.
- • InteractiveChefBot: this version is analogue to ChefBot, but we have a nicer interface during the metrics insertion step. The user can click on two different buttons: Use Default or Custom. If the user clicks on the first one, the default median value will be selected. Contrarily, if the user clicks on the second one, he will be allowed to manually set a custom value.
+- InteractiveChefBot: this version is analogue to ChefBot, but we have a nicer interface during the metrics insertion step. The user can click on two different buttons: Use Default or Custom. If the user clicks on the first one, the default median value will be selected. Contrarily, if the user clicks on the second one, he will be allowed to manually set a custom value.
